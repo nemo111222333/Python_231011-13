@@ -65,10 +65,3 @@ print(krotka[2])
 print(len(krotka))
 print(len(lista2))
 
-
-
-
-
-
-
-xxxxx
