@@ -54,3 +54,4 @@ keys = list(dni_tygodnia.keys())
 print(keys)
 print(keys[0])
 print(dni_tygodnia[keys[0]])
+
