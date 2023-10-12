@@ -44,3 +44,16 @@ blad = open("error.txt", "w", encoding="utf-8")
 przetworz(lines, wynik=wynik, blad=blad)
 wynik.close()
 blad.close()
+
+
+def silnia(n):
+    if n<=0:
+        return 1
+    else:
+        return n * silnia(n-1)
+
+# print(silnia(0))
+# print(silnia(3))
+silnia(-1)
+
+# ToDo: Zrobić silnia w wersji iteracyjnej
