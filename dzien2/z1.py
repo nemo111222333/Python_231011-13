@@ -1,7 +1,8 @@
 import os
 import shutil
 
-# ToDo: Program, który pakuje podkatalogi do osobnych zipów.
+# ToDo: Ścieżkę wejściową i wyjściową pobrać jako parametr wywołania pliku Pythona
+#       python dzien2/z1.py dzien2/Dane dzien2/Wyniki
 
 
 def lista(sciezka):
