@@ -37,22 +37,55 @@ class Frog(Muppet):
         print("jump")
 
 
+class Guinea:
+    def __init__(self, swimmer=True):
+        self.swimmer = swimmer
+
+    def move(self):
+        print("swim")
+
+    def voice(self):
+        print("grrr")
+
+    def dive(self):
+        print("dive")
 
 
-muppet = Muppet("XXX")
-muppet.showme()
-muppet.voice()
+class GuineaPig(Guinea, Pig):
+    def __init__(self, name, swimmer):
+        Guinea.__init__(self, swimmer)
+        Pig.__init__(self, name)
 
-Piggy = Pig("Miss Piggy")
-Piggy.showme()
-Piggy.voice()
-Piggy.move()
-Lola = Pig("Lola")
-Lola.showme()
-Lola.voice()
-Lola.move()
+    def voiceExtra(self):
+        Guinea.voice(self)
+        # Pig.voice(self)
 
-Kermit = Frog("Kermit")
-Kermit.showme()
-Kermit.voice()
-Kermit.jump()
+
+Holy = GuineaPig("Holy", False)
+Holy.showme()
+Holy.voice()
+Holy.voiceExtra()
+Holy.move()
+Holy.dive()
+
+# muppet = Muppet("XXX")
+# muppet.showme()
+# muppet.voice()
+#
+# Piggy = Pig("Miss Piggy")
+# Piggy.showme()
+# Piggy.voice()
+# Piggy.move()
+# Lola = Pig("Lola")
+# Lola.showme()
+# Lola.voice()
+# Lola.move()
+#
+# Kermit = Frog("Kermit")
+# Kermit.showme()
+# Kermit.voice()
+# Kermit.jump()
+#
+#
+# yyyy = Guinea()
+# yyyy.move()
