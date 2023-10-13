@@ -25,7 +25,7 @@ def odczyt1():
         print(row)
 
 
-biblioteka = {"Baśnie":["Andersen","Hans Christian", "polski"], "First step in Python": ["Doe", "John", "english"], "Pan Tadeusz": ["Mickiewicz", "Adam", "polski"]}
+biblioteka = {"Baśnie": ["Andersen","Hans Christian", "polski"], "First step in Python": ["Doe", "John", "english"], "Pan Tadeusz": ["Mickiewicz", "Adam", "polski"]}
 
 
 def zapis(nazwa_pliku, biblioteka):
